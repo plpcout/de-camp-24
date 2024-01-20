@@ -1,0 +1,4 @@
+01-docker-terraform/2_docker_sql/yellow_tripdata_2021-01.csv
+01-docker-terraform/2_docker_sql/sketch.*
+01-docker-terraform/2_docker_sql/output.*
+**/ny_taxi_postgres_data/*
