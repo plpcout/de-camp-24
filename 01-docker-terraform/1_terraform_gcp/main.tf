@@ -10,15 +10,19 @@ terraform {
 
 provider "google" {
   # credentials = "credentials_path" # not best practice
-  project = "terraform-demo-411919"
-  region  = "us-central1"
+  credentials = file(var.credentials)
+  # using env
+  # export GOOGLE_CREDENTIALS="/home/pedro/de-camp-24/01-docker-terraform/1_terraform_gcp/keys/credentials.json"
+  project = var.project
+  region  = var.region
 }
 
 
+## Bucket
 # resource "the_resource_name" "variable-name"
 resource "google_storage_bucket" "test-bucket" {
-  name          = "terraform-demo-411919-terraform-testing-bucket"
-  location      = "US"
+  name          = var.gcs_bucket_name
+  location      = var.location
   force_destroy = true
 
   lifecycle_rule {
@@ -41,3 +45,12 @@ resource "google_storage_bucket" "test-bucket" {
   }
 }
 
+## bigquery
+
+resource "google_bigquery_dataset" "demo_dataset_resource" {
+  dataset_id = var.bq_dataset_name
+  # friendly_name               = "test"
+  # description                 = "This is a test description"
+  # location                    = "EU"
+  # default_table_expiration_ms = 3600000
+}
