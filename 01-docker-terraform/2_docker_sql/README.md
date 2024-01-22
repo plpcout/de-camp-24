@@ -1,11 +1,4 @@
-## Docker and SQL
-
-Notes I used for preparing the videos: [link](https://docs.google.com/document/d/e/2PACX-1vRJUuGfzgIdbkalPgg2nQ884CnZkCg314T_OBq-_hfcowPxNIA0-z5OtMTDzuzute9VBHMjNYZFTCc1/pub)
-
-
 ## Commands 
-
-All the commands from the video
 
 Downloading the data
 
@@ -33,7 +26,7 @@ docker run -it \
 
 If you have the following error:
 
-```
+```bash
 docker run -it \
   -e POSTGRES_USER="root" \
   -e POSTGRES_PASSWORD="root" \
@@ -48,7 +41,7 @@ See 'docker run --help'.
 
 Change the mounting path. Replace it with the following:
 
-```
+```bash
 -v /e/zoomcamp/...:/var/lib/postgresql/data
 ```
 

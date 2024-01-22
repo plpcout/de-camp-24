@@ -6,4 +6,3 @@
 * Running Postgres locally with Docker
 * Setting up infrastructure on GCP with Terraform
 * Preparing the environment
-* Homework
