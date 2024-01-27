@@ -37,9 +37,9 @@ def main(params):
 
     df = next(df_iter)
 
-    #Adjust following columns from text to datetime
-    df.tpep_pickup_datetime = pd.to_datetime(df.tpep_pickup_datetime)
-    df.tpep_dropoff_datetime = pd.to_datetime(df.tpep_dropoff_datetime)
+    # Adjust following columns from text to datetime
+    df.lpep_pickup_datetime = pd.to_datetime(df.lpep_pickup_datetime)
+    df.lpep_dropoff_datetime = pd.to_datetime(df.lpep_dropoff_datetime)
 
     # this will create the table with the column names.
     # if it exists, then replace it
@@ -54,9 +54,9 @@ def main(params):
             # calling with next get a chunk of 100000 rows, as defined above
             df = next(df_iter)
             
-            #Adjust following columns from text to datetime
-            df.tpep_pickup_datetime = pd.to_datetime(df.tpep_pickup_datetime)
-            df.tpep_dropoff_datetime = pd.to_datetime(df.tpep_dropoff_datetime)
+            # Adjust following columns from text to datetime
+            df.lpep_pickup_datetime = pd.to_datetime(df.lpep_pickup_datetime)
+            df.lpep_dropoff_datetime = pd.to_datetime(df.lpep_dropoff_datetime)
             
             df.to_sql(name=table_name, con=engine, if_exists='append')
             t_end = time()
@@ -64,7 +64,8 @@ def main(params):
             print(f'Chunk proccessed after {round(t_end-t_start,3)} seconds.')
         except Exception as e:
             print(f'Ingestion finished')
-            break  
+            break
+    
   
 if __name__ == '__main__':
 
