@@ -36,6 +36,6 @@ terraform.rcs
 *.csv
 **sketch.*
 01-docker-terraform/2_docker_sql/output.*
-**/ny_taxi_postgres_data/*
+**/ny_taxi_postgres_data
 **/keys/*
 .ipynb_checkpoints
