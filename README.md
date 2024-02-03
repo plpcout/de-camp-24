@@ -7,3 +7,8 @@
 * Setting up infrastructure on GCP with Terraform
 * Preparing the environment
 
+### [Module 2: Workflow Orchestration](02-workflow-orchestration/)
+
+* Data Lake
+* Workflow orchestration
+* Workflow orchestration with Mage
