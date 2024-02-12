@@ -12,3 +12,12 @@
 * Data Lake
 * Workflow orchestration
 * Workflow orchestration with Mage
+
+### [Module 3: Data Warehouse](03-data-warehouse/)
+
+* Data Warehouse
+* BigQuery
+* Partitioning and clustering
+* BigQuery best practices
+* Internals of BigQuery
+* BigQuery Machine Learning
