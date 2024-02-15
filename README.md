@@ -13,6 +13,13 @@
 * Workflow orchestration
 * Workflow orchestration with Mage
 
+## [Workshop 1: Data Ingestion](cohorts/2024/workshops/dlt.md)
+
+* Reading from apis
+* Building scalable pipelines
+* Normalising data
+* Incremental loading
+
 ### [Module 3: Data Warehouse](03-data-warehouse/)
 
 * Data Warehouse
@@ -21,3 +28,4 @@
 * BigQuery best practices
 * Internals of BigQuery
 * BigQuery Machine Learning
+
