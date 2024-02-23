@@ -3,11 +3,11 @@ version: 2
 sources:
   - name: staging
     database:
-      taxi-rides-ny-339813-412521
+      terraform-demo-411919
       # For postgres:
       # database: production
     schema:
-      trips_data_all
+      ny_taxi
 
       # loaded_at_field: record_loaded_at
     tables:
