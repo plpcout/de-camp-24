@@ -13,7 +13,7 @@
 * Workflow orchestration
 * Workflow orchestration with Mage
 
-## [Workshop 1: Data Ingestion](cohorts/2024/workshops/dlt.md)
+### [Workshop 1: Data Ingestion](cohorts/2024/workshops/dlt.md)
 
 * Reading from apis
 * Building scalable pipelines
@@ -29,3 +29,13 @@
 * Internals of BigQuery
 * BigQuery Machine Learning
 
+### [Module 4: Analytics engineering](04-analytics-engineering/)
+
+* Basics of analytics engineering
+* dbt (data build tool)
+* BigQuery and dbt
+* Postgres and dbt
+* dbt models
+* Testing and documenting
+* Deployment to the cloud and locally
+* Visualizing the data with google data studio and metabase

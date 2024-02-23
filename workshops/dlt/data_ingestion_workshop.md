@@ -127,9 +127,9 @@ Let’s see how we could rewrite this as a generator.
 **Generator for streaming the data.** The memory usage here is minimal.
 
 As you can see, in the modified function, we yield each row as we get the data, without collecting it into memory. We can then run this generator and handle the data item by item.
-
+	
 ```python
-def search_twitter(query):
+def extract_data(query):
 	for row in paginated_get(query):
 		yield row
 
@@ -137,7 +137,7 @@ def search_twitter(query):
 for row in extract_data("cat pictures"):
 	# print the row
 	print(row)
-  # do something with the row such as cleaning it and writing it to a buffer
+  	# do something with the row such as cleaning it and writing it to a buffer
 	# continue requesting and printing data
 ```
 
