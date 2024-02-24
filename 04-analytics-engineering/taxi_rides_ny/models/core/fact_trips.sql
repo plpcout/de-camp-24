@@ -4,6 +4,8 @@
     )
 }}
 
+-- small change for ci pipeline testing
+
 with green_tripdata as (
     select *, 
         'Green' as service_type
