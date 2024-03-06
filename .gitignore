@@ -40,3 +40,10 @@ terraform.rcs
 **.env
 .ipynb_checkpoints
 Untitled.ipynb
+*.csv*
+*.parquet*
+*.credentials
+05-batch/code/data
+05-batch/code/lib
+05-batch/code/tmp
+05-batch/code/zones
