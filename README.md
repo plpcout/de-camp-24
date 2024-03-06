@@ -39,3 +39,11 @@
 * Testing and documenting
 * Deployment to the cloud and locally
 * Visualizing the data with google data studio and metabase
+
+### [Module 5: Batch processing](05-batch/)
+
+* Batch processing
+* What is Spark
+* Spark Dataframes
+* Spark SQL
+* Internals: GroupBy and joins
