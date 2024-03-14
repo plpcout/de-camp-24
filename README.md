@@ -13,12 +13,6 @@
 * Workflow orchestration
 * Workflow orchestration with Mage
 
-### [Workshop 1: Data Ingestion](cohorts/2024/workshops/dlt.md)
-
-* Reading from apis
-* Building scalable pipelines
-* Normalising data
-* Incremental loading
 
 ### [Module 3: Data Warehouse](03-data-warehouse/)
 
@@ -47,3 +41,23 @@
 * Spark Dataframes
 * Spark SQL
 * Internals: GroupBy and joins
+
+### [Module 6: Streaming](06-streaming/)
+
+* Introduction to Kafka
+* Schemas (avro)
+* Kafka Streams
+* Kafka Connect and KSQL
+
+---
+
+### [Workshop 1: Data Ingestion](workshops/dlt/)
+
+* Reading from apis
+* Building scalable pipelines
+* Normalising data
+* Incremental loading
+
+### [Workshop 2: Stream Processing with SQL](workshops/rising_wave/)
+
+* Rising Wave
